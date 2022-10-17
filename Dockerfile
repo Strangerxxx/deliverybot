@@ -1,5 +1,5 @@
 # syntax=docker/dockerfile:1
-FROM --platform=$BUILDPLATFORM node:lts
+FROM node:lts
 
 WORKDIR /src
 COPY . .
