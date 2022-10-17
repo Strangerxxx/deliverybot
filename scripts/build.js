@@ -97,7 +97,6 @@ async function main() {
       run('app', 'clean'),
       run('client', 'clean'),
       run('run', 'clean'),
-      run('firebase', 'clean'),
       run('deploybot', 'clean'),
       run('slackbot', 'clean'),
     ]);
@@ -113,7 +112,6 @@ async function main() {
     ]);
     await run('run', 'build');
     await run('run', 'bundle');
-    await run('firebase', 'build');
   }
 
   if (publish) {
